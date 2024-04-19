@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS</title>
+    <style>
+        body {
+            background-image: url('bg.png');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; 
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            padding: 20px; 
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+
+        img {
+            width: 350px;
+            height: auto;
+            margin-top: -100px;
+            margin-bottom: -10px;
+        }
+
+        h2 {
+            color: #FFEBF3;
+            margin-bottom: 20px;
+            font-size: 35px;
+        }
+
+        p {
+            color: #FFEBF3;
+            margin-bottom: 30px;
+            font-size: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Allow wrapping of buttons */
+            margin-top: 20px; /* Adjust as needed */
+        }
+
+        .link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FF4AA0;
+            color: #FFEBF3;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+            margin: 0 10px;
+        }
+
+        .link:hover {
+            background-color: #34B2FD;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Logo">
+        <h2>This is page uses an internal CSS!</h2>
+        <p>You can do more here than inline like using selectors!</p>
+        <p>You can see other styles below:</p>
+        <div class="button-container">
+            <a href="inline.html" class="link">Inline CSS</a>
+            <a href="external.html" class="link">External CSS</a>
+        </div>
+    </div>
+</body>
+</html>
